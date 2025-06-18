@@ -2,7 +2,7 @@ package mypkg;
 
 public class calci {
 	public int add(int a , int b){
-		return a+b;
+		return a*b;
 	}
 	public int diff(int a, int b) {
 		return a-b;
