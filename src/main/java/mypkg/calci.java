@@ -14,7 +14,7 @@ public class calci {
 		
 		calci calc = new calci();
 		System.out.println(calc.add(10,20));
-		System.out.println(calc.add(20,10));
+		System.out.println(calc.diff(20,10));
 	}
 
 }
