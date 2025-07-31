@@ -37,8 +37,8 @@ jobs:
     - name: Login to Docker
       uses: docker/login-action@v2
       with:
-        username: ${{ secrets.docker_username }}
-        password: ${{ secrets.docker_password }}
+        username: ${{ secrets.DOCKER_USER }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
     # Logs into Docker Hub using credentials stored in GitHub Secrets, allowing for subsequent image push actions.
           
     - name: Build and Push Image
@@ -47,4 +47,4 @@ jobs:
         context: .
         file: /Dockerfile
         push: true
-        tags: ${{ secrets.docker_username }}/maven_proj:latest
+        tags: ${{ secrets.DOCKER_USER }}/maven_proj:latest
