@@ -1,3 +1,3 @@
 FROM openjdk:17-jdk-slim
-WORKINGDIR sl-vcs-maven
+WORKDIR /sl-vcs-maven
 COPY target/sl_jenkins-0.0.1-SNAPSHOT.jar .
